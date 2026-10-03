@@ -1,0 +1,46 @@
+# ==========================================
+# 1. Dataset & Extracted Raw Files
+# ==========================================
+# Exclude data directories to avoid repository bloat
+data/
+flower_photos_raw/
+
+# Exclude compressed dataset archives
+*.tgz
+*.zip
+*.tar
+*.gz
+
+# ==========================================
+# 2. Python & Virtual Environment
+# ==========================================
+# Virtual environment directory
+.venv/
+venv/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# 3. Model Weights & Checkpoints
+# ==========================================
+# Exclude large trained model binaries
+*.pth
+*.pt
+*.h5
+*.keras
+*.onnx
+*.ckpt
+*.bin
+
+# ==========================================
+# 4. IDE & OS Generated Files
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
