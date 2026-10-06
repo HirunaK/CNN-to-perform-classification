@@ -23,7 +23,7 @@ def classify_image_both_models(image_path, model_a, model_b, class_names=['daisy
     """
     # 1. Load image and apply assignment-standard preprocessing (64x64 resize + normalization)
     transform = transforms.Compose([
-        transforms.Resize((64, 64)),
+        transforms.Resize((64, 64), antialias=True),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     ])
