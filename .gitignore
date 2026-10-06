@@ -2,7 +2,13 @@
 # 1. Dataset & Extracted Raw Files
 # ==========================================
 # Exclude data directories to avoid repository bloat
-data/
+
+# Ignore everything inside the data folder
+data/*
+
+# EXCEPTION: Do not ignore dataset_loader.py inside data/
+!data/dataset_loader.py
+
 flower_photos_raw/
 
 # Exclude compressed dataset archives
