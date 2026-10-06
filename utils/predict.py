@@ -7,7 +7,11 @@ from torchvision import transforms
 import matplotlib.pyplot as plt
 
 # Path resolution to ensure models can be imported from any location
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__)) if "__file__" in locals() else os.getcwd()
+PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, ".."))
+
+if PROJECT_ROOT not in sys.path:
+    sys.path.append(PROJECT_ROOT)
 
 from models.model_a import ModelA
 from models.model_b import ModelB
@@ -81,9 +85,8 @@ if __name__ == "__main__":
     model_b = ModelB(num_classes=5)
 
     # 2. Define paths to saved weights
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    weights_a_path = os.path.join(base_dir, "saved_models", "model_a_weights.pth")
-    weights_b_path = os.path.join(base_dir, "saved_models", "model_b_weights.pth")
+    weights_a_path = os.path.join(PROJECT_ROOT, "saved_models", "model_a_weights.pth")
+    weights_b_path = os.path.join(PROJECT_ROOT, "saved_models", "model_b_weights.pth")
 
     # 3. Load Model A weights
     if os.path.exists(weights_a_path):
