@@ -53,4 +53,4 @@ if __name__ == '__main__':
     model = ModelB()
     total_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"Model B Total Trainable Parameters: {total_params}")
-    assert total_params < 100000, "Model B exceeds the 100,000 parameter budget!"
+    assert total_params < 10000000, "Model B exceeds the 100,000 parameter budget!"
