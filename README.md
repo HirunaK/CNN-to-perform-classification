@@ -136,14 +136,14 @@ python utils/visualization.py
 
 ## Comparative Results
 
-| Model Architecture | Parameter Count | Model Size | Test Accuracy | Computational Complexity |
-|---|---:|---:|---:|---|
-| Model A (Standard CNN) | ~1.2M | ~4.8 MB | ~74.5% | High MACs (standard convolutions) |
-| Model B (Lightweight Depthwise CNN) | ~18K (<100K) | <200 KB | ~71.8% | Ultra-low MACs (edge-optimized) |
-| MobileNetV2 (Fine-tuned) | ~2.2M | ~8.8 MB | ~88.2% | Parameter-efficient depthwise convolutions |
-| EfficientNet-B0 (Fine-tuned) | ~4.0M | ~16.0 MB | ~90.4% | Compound-scaled architecture |
+### Comprehensive Comparison Across Custom and Fine-Tuned SOTA Networks
 
-*Note: Results are approximate and depend on the training configuration and execution environment.*
+| Model Topology | Total Parameters | Model Size | Test Accuracy (%) | F1-Score (Macro) |
+|---|---:|---:|---:|---:|
+| Model A (Standard) | 1,143,045 | 4.37 MB (4,475.49 KB) | 72.12% | 0.7127 |
+| Model B (Lightweight) | **41,413** | **174.30 KB** | 73.56% | 0.7032 |
+| MobileNetV2 | 2,230,277 | 8.64 MB | 86.87% | 0.8666 |
+| EfficientNet-B0 | 4,013,953 | 15.47 MB | 85.97% | 0.8575 |
 
 ---
 
