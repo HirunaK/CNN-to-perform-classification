@@ -18,7 +18,7 @@ This repository contains the complete implementation, comparative benchmarks, an
 
 4. **Optimizer Benchmarking:** Compares the convergence performance of **Adam**, **SGD**, and **SGD with Momentum** across both custom network architectures.
 
-5. **State-of-the-Art (SOTA) Pre-trained Fine-Tuning:** Evaluates transfer learning and fine-tuning using **MobileNetV2** and **EfficientNet-B0** on the same \(64 \times 64\) dataset split.
+5. **State-of-the-Art (SOTA) Pre-trained Fine-Tuning:** Evaluates transfer learning and fine-tuning using **MobileNetV2** and **EfficientNet-B0** on the same \(64 x 64\) dataset split.
 
 ---
 
