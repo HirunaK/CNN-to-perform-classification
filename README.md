@@ -1,6 +1,6 @@
 # EN3150 Assignment 03: Resource-Constrained CNN for Edge Image Classification
 
-This repository contains the complete implementation, comparative benchmarks, and evaluation pipeline for **EN3150 Assignment 03**. The project focuses on designing and training resource-constrained Convolutional Neural Networks (CNNs) for edge and low-resource sensor environments using the Kaggle **Flowers-5** dataset, downscaled to a maximum resolution of \(64 \times 64\) pixels.
+This repository contains the complete implementation, comparative benchmarks, and evaluation pipeline for **EN3150 Assignment 03**. The project focuses on designing and training resource-constrained Convolutional Neural Networks (CNNs) for edge and low-resource sensor environments using the Kaggle **Flowers-5** dataset, downscaled to a maximum resolution of \(64 x 64\) pixels.
 
 **Repository URL:** [CNN-to-perform-classification](https://github.com/HirunaK/CNN-to-perform-classification)
 
@@ -8,7 +8,7 @@ This repository contains the complete implementation, comparative benchmarks, an
 
 ## Technical Overview
 
-1. **Dataset Preprocessing:** Downscales flower images (Daisy, Dandelion, Rose, Sunflower, and Tulip) to \(64 \times 64\) pixels using area-averaging anti-aliasing interpolation (`cv2.INTER_AREA`). The dataset is split into **70% Training**, **15% Validation**, and **15% Testing**.
+1. **Dataset Preprocessing:** Downscales flower images (Daisy, Dandelion, Rose, Sunflower, and Tulip) to \(64 x 64\) pixels using area-averaging anti-aliasing interpolation (`cv2.INTER_AREA`). The dataset is split into **70% Training**, **15% Validation**, and **15% Testing**.
 
 2. **Model Architectures:**
    - **Model A (Standard CNN):** Uses interleaved standard 2D convolution, batch normalization, ReLU activation, and max-pooling layers.
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 
 ### 4. Download and Prepare the Dataset
 
-Run the dataset loader script to automatically download the dataset, downscale images to \(64 \times 64\) pixels using anti-aliasing interpolation, and partition the data into training, validation, and testing sets.
+Run the dataset loader script to automatically download the dataset, downscale images to \(64 x 64\) pixels using anti-aliasing interpolation, and partition the data into training, validation, and testing sets.
 
 ```bash
 python data/dataset_loader.py
