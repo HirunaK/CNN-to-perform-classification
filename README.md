@@ -145,10 +145,3 @@ python utils/visualization.py
 | MobileNetV2 | 2,230,277 | 8.64 MB | 86.87% | 0.8666 |
 | EfficientNet-B0 | 4,013,953 | 15.47 MB | 85.97% | 0.8575 |
 
----
-
-## License and Academic Integrity
-
-This project was developed for the **EN3150 User-Centered Systems / Pattern Recognition** course.
-
-All submitted work is intended to comply with the university's academic integrity and anti-plagiarism guidelines.
